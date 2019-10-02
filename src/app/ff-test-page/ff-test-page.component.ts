@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { JokeService } from './joke.service';
+import { Joke, JokeService } from './joke.service';
 
 @Component({
   selector: 'app-ff-test-page',
@@ -7,7 +7,7 @@ import { JokeService } from './joke.service';
   styleUrls: ['./ff-test-page.component.scss']
 })
 export class FfTestPageComponent {
-  public jokes: string[];
+  public jokes: Joke[];
   public errorMessage: string;
 
   constructor(private jokeService: JokeService) {}

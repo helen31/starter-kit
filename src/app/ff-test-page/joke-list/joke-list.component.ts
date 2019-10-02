@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Joke } from '@app/ff-test-page/joke.service';
 
 @Component({
   selector: 'app-joke-list',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./joke-list.component.scss']
 })
 export class JokeListComponent {
-  @Input() public jokeList: string[];
+  @Input() public jokeList: Joke[];
 }

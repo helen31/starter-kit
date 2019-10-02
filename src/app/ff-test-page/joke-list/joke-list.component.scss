@@ -1,0 +1,7 @@
+.list-group-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.list-group-item span {
+  margin-right: 5px;
+  font-weight: bold;
+}

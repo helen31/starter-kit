@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-sm-10">
+      <input type="text" #inputElem placeholder="find jokes" />
+    </div>
+    <div class="col-sm-2">
+      <button class="btn btn-primary" (click)="findJokes(inputElem.value)">submit</button>
+    </div>
+  </div>
+  <app-joke-list [jokeList]="jokes"></app-joke-list>
+  <div *ngIf="errorMessage">
+    {{ errorMessage }}
+  </div>
+</div>

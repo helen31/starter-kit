@@ -1,0 +1,13 @@
+<div *ngIf="jokeList">
+  <ul class="list-group" *ngIf="jokeList.length; else other_content">
+    <h4>Chucknorris found:</h4>
+    <li class="list-group-item" *ngFor="let joke of jokeList; let i = index">
+      <span>{{ i + 1 }}. Joke</span>
+      <span>#{{ i + 1 }}</span>
+      <span>{{ joke.value }}</span>
+    </li>
+  </ul>
+  <ng-template #other_content>
+    <p>Chucknorris has not found ((</p>
+  </ng-template>
+</div>
